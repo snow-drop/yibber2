@@ -61,7 +61,7 @@
     </com.google.android.material.tabs.TabLayout>
 
     <include
-        layout="@layout/post"
+        layout="@layout/posts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
