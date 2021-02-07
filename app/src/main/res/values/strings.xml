@@ -4,6 +4,9 @@
     <string name="following">Following</string>
     <string name="for_you">For You</string>
     <string name="search">search</string>
-    <string name="username_1">billauthor</string>
-    <string name="user_1_timeline_update">Just now ꞏ Boston ꞏ 138 Plays</string>
+    <string name="username1">billauthor</string>
+    <string name="user1_timeline_update">Just now ꞏ Boston ꞏ 138 Plays</string>
+    <string name="more_horiz">more_horiz</string>
+    <string name="post_img">post_img</string>
+    <string name="user1_post_title">Californian Vibes</string>
 </resources>
