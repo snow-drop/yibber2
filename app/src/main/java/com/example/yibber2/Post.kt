@@ -3,6 +3,7 @@ package com.example.yibber2
 class Post {
 
     var id: Long = 0L
+    var profilePhotoUrl: String? = null
     var username: String? = null
     var timePosted: Long = 0L
     var location: String? = null

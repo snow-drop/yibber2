@@ -15,9 +15,11 @@ class PostAdapter(val context: Context, val posts: List<Post>) :
     inner class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun setData(post: Post?) {
             post?.let {
+                itemView.imgProfilePhoto.setImageResource(post.profilePhotoUrl!!.toInt())
                 itemView.txtUsername.text = post.username
                 itemView.txtStatus.text =
                     "${getRelativeTime(post)} \uA78F ${getLocation(post)} ${post.playCount} Plays"
+                itemView.imgPhoto.setImageResource(post.photoUrl!!.toInt())
                 itemView.txtTitle.text = post.title
                 itemView.txtCaption.text = post.caption
                 itemView.btnReact.text = post.reactCount.toString()
