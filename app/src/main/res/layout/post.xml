@@ -8,7 +8,6 @@
         android:id="@+id/profile_image11"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
         android:elevation="12dp"
         android:src="@drawable/pp_kosaki"
         app:civ_border_color="#edebe4"
@@ -23,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="12dp"
         android:text="@string/username_1"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -46,9 +44,8 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
         android:layout_marginEnd="16dp"
         android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
