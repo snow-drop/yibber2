@@ -5,8 +5,11 @@
     <string name="for_you">For You</string>
     <string name="search">search</string>
     <string name="username1">billauthor</string>
-    <string name="user1_timeline_update">Just now ꞏ Boston ꞏ 138 Plays</string>
+    <string name="user1_timeline_update">Just now  ꞏ  Boston  ꞏ  138 Plays</string>
     <string name="more_horiz">more_horiz</string>
     <string name="post_img">post_img</string>
     <string name="user1_post_title">Californian Vibes</string>
+    <string name="user1_caption">Stop what you\'re doing! Listen to me and my mate <font fgcolor="#0000FF">@charlyjones</font> for the next hour.
+        <font fgcolor="#0000FF">#california #venice #beach #vibes #yolo</font>
+    </string>
 </resources>
