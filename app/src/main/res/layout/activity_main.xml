@@ -35,14 +35,14 @@
         app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/search" />
+        app:srcCompat="@drawable/icon_search" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/timelineTabLayout"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_marginTop="12dp"
-        android:background="@drawable/tab_shadow"
+        android:background="@drawable/shadow_tab"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,4 +59,13 @@
             android:layout_height="wrap_content"
             android:text="@string/for_you" />
     </com.google.android.material.tabs.TabLayout>
+
+    <include
+        layout="@layout/post"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timelineTabLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
