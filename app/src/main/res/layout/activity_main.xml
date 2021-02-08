@@ -78,11 +78,24 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <View
-        android:id="@+id/divider2"
+        android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toTopOf="@+id/include1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnRecord"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/include1"
+        app:srcCompat="@drawable/ic_record" />
 </androidx.constraintlayout.widget.ConstraintLayout>

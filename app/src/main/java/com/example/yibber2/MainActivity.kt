@@ -3,6 +3,7 @@ package com.example.yibber2
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.posts.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,5 +18,6 @@ class MainActivity : AppCompatActivity() {
         val posts = YibberPostApi.getFeedPostsByUserId(1L)
         postsView.adapter = PostAdapter(this, posts)
 
+        btnRecord.bringToFront()
     }
 }
