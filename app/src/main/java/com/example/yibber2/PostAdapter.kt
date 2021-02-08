@@ -1,6 +1,7 @@
 package com.example.yibber2
 
 import android.content.Context
+import android.text.Html
 import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.View
@@ -18,10 +19,10 @@ class PostAdapter(val context: Context, val posts: List<Post>) :
                 itemView.imgProfilePhoto.setImageResource(post.profilePhotoUrl!!.toInt())
                 itemView.txtUsername.text = post.username
                 itemView.txtStatus.text =
-                    "${getRelativeTime(post)} \uA78F ${getLocation(post)} ${post.playCount} Plays"
+                    "${getRelativeTime(post)} \uA78F${getLocation(post)} ${post.playCount} Plays"
                 itemView.imgPhoto.setImageResource(post.photoUrl!!.toInt())
                 itemView.txtTitle.text = post.title
-                itemView.txtCaption.text = post.caption
+                itemView.txtCaption.text = Html.fromHtml(post.caption)
                 itemView.btnReact.text = post.reactCount.toString()
                 itemView.btnComment.text = post.commentCount.toString()
                 itemView.btnShare.text = post.shareCount.toString()
@@ -31,7 +32,7 @@ class PostAdapter(val context: Context, val posts: List<Post>) :
         private fun getLocation(post: Post): String {
             var location = ""
             post.location?.let {
-                location = "${post.location} \uA78F"
+                location = " ${post.location} \uA78F"
             }
             return location
         }
