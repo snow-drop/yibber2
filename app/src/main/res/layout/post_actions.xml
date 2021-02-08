@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/icon_heart"
+        android:drawableLeft="@drawable/ic_heart"
         android:text="@string/post1_heart_react_count"
         android:textColor="@color/black" />
 
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/icon_comment"
+        android:drawableLeft="@drawable/ic_icon_comment"
         android:text="@string/post1_comment_count"
         android:textColor="@color/black" />
 
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/icon_share"
+        android:drawableLeft="@drawable/ic_share"
         android:text="@string/post1_share_count"
         android:textColor="@color/black" />
 </LinearLayout>
