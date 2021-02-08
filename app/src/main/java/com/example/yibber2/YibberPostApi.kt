@@ -15,7 +15,8 @@ class YibberPostApi {
             post.playCount = 392
             post.photoUrl = R.drawable.post_img_summer_sunset.toString()
             post.title = "Summer Sunset"
-            post.caption = "Paint the sky. Make it yours."
+            post.caption = "Sunsets are proof that no matter what happens, everyday can end " +
+                    "beautifully. <font color=\"#49a1ff\">#sunset #summer</font>"
             post.reactCount = 20
             post.commentCount = 5
             post.shareCount = 2

@@ -4,15 +4,13 @@
     <string name="following">Following</string>
     <string name="for_you">For You</string>
     <string name="search">search</string>
-    <string name="username1">billauthor</string>
-    <string name="user1_timeline_update">Just now  ꞏ  Boston  ꞏ  138 Plays</string>
+    <string name="post_user">billauthor</string>
+    <string name="post_timeline_update">Just now  ꞏ  Boston  ꞏ  138 Plays</string>
     <string name="more_horiz">more_horiz</string>
     <string name="post_img">post_img</string>
-    <string name="user1_post_title">Californian Vibes</string>
-    <string name="post1_caption">Stop what you\'re doing! Listen to me and my mate <font fgcolor="#0000FF">@charlyjones</font> for the next hour.
-        <font fgcolor="#0000FF">#california #venice #beach #vibes #yolo</font>
-    </string>
-    <string name="post1_heart_react_count">59</string>
-    <string name="post1_comment_count">19</string>
-    <string name="post1_share_count">7</string>
+    <string name="post_title">Californian Vibes</string>
+    <string name="post_caption">Listen to me and my mate for the next hour.</string>
+    <string name="post_heart_react_count">59</string>
+    <string name="post_comment_count">19</string>
+    <string name="post_share_count">7</string>
 </resources>
