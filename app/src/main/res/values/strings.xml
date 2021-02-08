@@ -13,4 +13,8 @@
     <string name="post_heart_react_count">59</string>
     <string name="post_comment_count">19</string>
     <string name="post_share_count">7</string>
+    <string name="home">Home</string>
+    <string name="recordings">Recordings</string>
+    <string name="record">Record</string>
+    <string name="notifications">Notifications</string>
 </resources>
