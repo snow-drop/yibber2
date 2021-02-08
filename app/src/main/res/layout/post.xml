@@ -76,7 +76,7 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:layout_margin="11dp"
                 android:elevation="10dp"
                 android:src="@drawable/icon_play" />
@@ -125,6 +125,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
     <include
+        android:id="@+id/include2"
         layout="@layout/post_actions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -132,5 +133,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCaption" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="23dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
