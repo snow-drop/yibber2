@@ -44,7 +44,5 @@
         android:layout_height="60dp"
         android:layout_weight="1"
         android:padding="12dp"
-        android:src="@drawable/pp_kosaki"
-        app:civ_border_color="#edebe4"
-        app:civ_border_width="0.1dp" />
+        android:src="@drawable/pp_kosaki" />
 </LinearLayout>

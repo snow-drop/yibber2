@@ -67,6 +67,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timelineTabLayout" />
 
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timelineTabLayout" />
+
     <include
         android:id="@+id/include1"
         layout="@layout/navbar"
