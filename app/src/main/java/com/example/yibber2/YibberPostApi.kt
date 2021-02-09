@@ -1,14 +1,38 @@
 package com.example.yibber2
 
+import java.util.*
+
 class YibberPostApi {
     companion object {
+        val IDS = listOf(randomString(), randomString())
+        val POSTS = listOf(post1(), post2())
+        val CURRENT_USER_ID = IDS.get(0)
+
         fun getFeedPostsByUserId(id: Long): List<Post> {
             return listOf(post1(), post2())
         }
 
+        fun react(postId: String, userId: String): Boolean {
+            val postToReact: Post =
+                POSTS.stream().filter { post -> post.id == postId }.findFirst().get()
+            postToReact.let {
+                val reactedUserIds = postToReact.reactedUserIds
+                val userIdExists = reactedUserIds
+                    ?.stream().filter { uId -> uId == userId }
+                    ?.findFirst()?.isPresent
+                return if (userIdExists!!) {
+                    reactedUserIds.remove(userId)
+                    true
+                } else {
+                    reactedUserIds.add(userId)
+                    false
+                }
+            }
+        }
+
         private fun post2(): Post {
             val post = Post()
-            post.id = 1L
+            post.id = IDS.get(1)
             post.profilePhotoUrl = R.drawable.pp_kaguya.toString()
             post.username = "lindseynguyen"
             post.timePosted = System.currentTimeMillis()
@@ -25,7 +49,7 @@ class YibberPostApi {
 
         private fun post1(): Post {
             val post = Post()
-            post.id = 1L
+            post.id = IDS.get(0)
             post.profilePhotoUrl = R.drawable.pp_kosaki.toString()
             post.username = "billauthor"
             post.timePosted = System.currentTimeMillis()
@@ -41,5 +65,7 @@ class YibberPostApi {
             post.shareCount = 7
             return post
         }
+
+        private fun randomString() = UUID.randomUUID().toString()
     }
 }

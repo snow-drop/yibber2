@@ -2,7 +2,7 @@ package com.example.yibber2
 
 class Post {
 
-    var id: Long = 0L
+    var id: String? = null
     var profilePhotoUrl: String? = null
     var username: String? = null
     var timePosted: Long = 0L
@@ -14,4 +14,5 @@ class Post {
     var reactCount: Long = 0L
     var commentCount: Long = 0L
     var shareCount: Long = 0L
+    var reactedUserIds: MutableList<String> = ArrayList()
 }
